@@ -1,6 +1,6 @@
 src/*.o
 src/lex.yy.c
-
+*.c
 # Prerequisites
 *.d
 
