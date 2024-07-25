@@ -8,7 +8,7 @@ Thank you for considering contributing to this repository! Contributions are wel
 
 2. **Clone the forked repository**: 
     ```bash
-    git clone https://github.com/your-username/repo-name.git
+    git clone https://github.com/arya2004/compiler_design.git
     ```
 
 3. **Create a new branch**: 
