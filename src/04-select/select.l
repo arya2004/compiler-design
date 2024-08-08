@@ -3,7 +3,7 @@
 
 
 %%
-a{1}[a-z]*a{1}	 { fprintf(yyout, "%s", yytext); }
+a{1}[a-z ]*a{1}	 { fprintf(yyout, "%s", yytext); }
 . {fprintf(yyout, "");}
 %%
 
