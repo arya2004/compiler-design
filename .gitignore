@@ -3,7 +3,7 @@ src/lex.yy.c
 *.c
 # Prerequisites
 *.d
-
+*.h
 # Object files
 *.o
 *.ko

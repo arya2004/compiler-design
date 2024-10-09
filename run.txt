@@ -1,0 +1,5 @@
+bison -d parser.y    # Generates y.tab.h and y.tab.c
+lex lexical.l        # Generates lex.yy.c
+gcc lex.yy.c y.tab.c -o syntax_analyzer -ll  # Compiles the code
+
+./syntax_analyzer < input.c
