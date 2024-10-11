@@ -1,18 +1,19 @@
-%{
-#include "y.tab.h"  /* Include generated header file from Yacc */
+%{ 
+	/* LEX File*/
+	#include "y.tab.h" 
+	extern yylval;
 %}
 
-%%
-[a-zA-Z][a-zA-Z0-9]*     { return ID; }   /* Match variable names */
-[0-9]+                   { return NUM; }  /* Match numbers */
-"="                      { return '='; }
-"*"                      { return '*'; }
-"+"                      { return '+'; }
-[ \t]                    ;                 /* Ignore whitespace */
-\n                       { return 0; }     /* Return 0 on new line (end of input) */
-.                        { return yytext[0]; }
-%%
+%% 
+[0-9]+ { 
+			yylval = atoi(yytext); 
+			return NUMBER; 
+			} 
 
-int yywrap() {
-    return 1;
-}
+[a-zA-Z]+ { return ID; } 
+[ \t]+		 ; /*For skipping whitespaces*/
+
+\n		 { return 0; } 
+.		 { return yytext[0]; } 
+
+%% 
