@@ -1,0 +1,4 @@
+Hello, i am arya from VIT
+VIT is a good college
+This is compiler design lab assignment
+lex flex yacc bison

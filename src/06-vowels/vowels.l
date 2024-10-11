@@ -25,6 +25,9 @@ int vowel_count(const char *str) {
     if (vowel_count(yytext) == 5) {
         printf("%s\n", yytext);
     }
+    else{
+        printf("nope\n");
+    }
 }
 
 

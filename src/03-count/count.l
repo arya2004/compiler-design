@@ -1,6 +1,6 @@
 %{
 #include<stdio.h>
-int lines=0,spaces=0,tabs=0,character=0,words=0;        
+int lines=1,spaces=0,tabs=0,character=0,words=0;        
 %}
  
 
